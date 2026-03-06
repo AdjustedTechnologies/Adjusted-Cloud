@@ -47,8 +47,8 @@ Players.PlayerAdded:Connect(function(p)
     AdjustedCloud.SetData(p, DATA_NAME, "Coins", data.Coins + 50)
     -- 1st arg: player, 2nd: DataStore name, 3rd: field name, 4th: new value
 
-    -- Print updated value (note: `data` still holds the old value, but the cache is updated)
-    print(p.Name .. " now has: Coins=" .. data.Coins + 50)
+    -- Print updated value
+    print(p.Name .. " now has: Coins=" .. data.Coins)
 end)
 
 -- When a player leaves
@@ -159,5 +159,6 @@ Use `InitGlobal`, `SetGlobal`, `UpdateGlobal` exactly like player methods, but w
 - Join the [Discord](https://discord.gg/...) to ask questions and share your projects.
 
 ---
+
 
 Now you are ready to use AdjustedCloud like a pro!
