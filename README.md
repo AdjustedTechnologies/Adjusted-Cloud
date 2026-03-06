@@ -188,7 +188,6 @@ Issues and pull requests are welcome! Please follow the existing code style and 
 
 ## Links
 
-- [GitHub Repository](https://github.com/AdjustedTechnologies/AdjustedCloud)
+- [GitHub Repository](https://github.com/AdjustedTechnologies/Adjusted-Cloud)
 - [Roblox Developer Forum Thread](#) (coming soon)
-- [Documentation Wiki](https://github.com/AdjustedTechnologies/AdjustedCloud/wiki)
 ```
