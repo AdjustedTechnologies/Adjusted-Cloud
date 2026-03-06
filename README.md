@@ -58,10 +58,9 @@ Unlike other frameworks that hide complexity behind auto‑save and profiles, Ad
 
 ## Installation
 
-1. Copy the `AdjustedCloud` folder into `ReplicatedStorage`.
+1. Copy the `AdjustedCloud` module into `ReplicatedStorage`.
 2. Enable API services:  
    `File → Experience Settings → Security → Enable Studio Access to API Services`.
-3. (Optional) Configure your own `DataStoreAccess` module if needed.
 
 ---
 
