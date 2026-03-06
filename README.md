@@ -9,7 +9,7 @@ No magic auto-save. Just caching, dirty flags, atomic operations, and full contr
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
 - [Philosophy](#philosophy)
 - [Features](#features)
@@ -101,7 +101,7 @@ end)
 | `GetData` | `(player: Player, dataName: string)` | `table` | Returns the cached data table (or empty table if not loaded). |
 | `SetData` | `(player: Player, dataName: string, key: string, value: any)` | `nil` | Sets a field, marks dirty if changed. |
 | `SetBatch` | `(player: Player, dataName: string, updates: table, force?: boolean)` | `boolean` | Updates multiple fields. Returns `true` if any field changed. |
-| `MergeData` | `(player: Player, dataName: string, updates: table, force?: boolean)` | `boolean` | ⚠️ Deprecated – use `SetBatch` instead. |
+| `MergeData` | `(player: p, data: string, changes: table, forced?: boolean)` | `boolean` | ⚠️ Deprecated – use `SetBatch` instead. |
 | `UpdateField` | `(player: Player, dataName: string, key: string, updater: function(old: any) -> any)` | `(boolean, any)` | Atomic field update. Returns `(success, newValue)` or `(false, error)`. |
 | `SaveData` | `(player: Player, dataName: string, force?: boolean)` | `(boolean, string?)` | Saves if dirty or forced. Returns `(success, error?)`. |
 | `SaveAllDirty` | `(player: Player)` | `(boolean, table?)` | Saves all dirty dataNames for the player. Returns `(success, errors?)`. |
@@ -122,7 +122,7 @@ end)
 | `GetGlobal` | `(globalKey: string, dataName: string)` | `table` | Returns the global data table. |
 | `SetGlobal` | `(globalKey: string, dataName: string, key: string, value: any)` | `nil` | Sets a global field, marks dirty. |
 | `SetBatchGlobal` | `(globalKey: string, dataName: string, updates: table, force?: boolean)` | `boolean` | Batch updates global data. Returns `true` if any field changed. |
-| `MergeGlobal` | `(globalKey: string, dataName: string, updates: table, force?: boolean)` | `boolean` | ⚠️ Deprecated – use `SetBatchGlobal` instead. |
+| `MergeGlobal` | `(gkey: string, data: string, changes: table, forced?: boolean)` | `boolean` | ⚠️ Deprecated – use `SetBatchGlobal` instead. |
 | `UpdateGlobal` | `(globalKey: string, dataName: string, key: string, updater: function(old: any) -> any)` | `(boolean, any)` | Atomic global field update. |
 | `SaveGlobal` | `(globalKey: string, dataName: string, force?: boolean)` | `(boolean, string?)` | Saves global data if dirty or forced. |
 | `SaveAllDirtyGlobal` | `()` | `(boolean, table?)` | Saves all dirty global data. |
