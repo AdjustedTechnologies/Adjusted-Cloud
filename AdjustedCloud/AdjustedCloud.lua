@@ -1,4 +1,4 @@
--- AdjustedCloud, Created by AdjustedTechnologies
+-- AdjustedCloud, Created by AdjustedTechnologies on 7 March, 2026
 -- Latest version you can find on github: https://github.com/AdjustedTechnologies/Adjusted-Cloud
 -- This module is licensed under MIT, you can find the full license in the GitHub repository.
 -- Global Data Store (W.I.P) does not yet have watchers.
