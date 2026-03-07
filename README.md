@@ -5,7 +5,6 @@ No magic auto-save. Just caching, dirty flags, atomic operations, and full contr
 
 [![Roblox](https://img.shields.io/badge/Roblox-Studio-blue)](https://www.roblox.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/AdjustedTechnologies/Adjusted-Cloud?style=social)](https://github.com/AdjustedTechnologies/Adjusted-Cloud)
 
 ---
 
